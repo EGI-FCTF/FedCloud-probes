@@ -74,6 +74,7 @@ while [[ "$#" -gt 0 ]]; do
    -T) _BDII="$2"; shift 2 ;;
    -l) _IMGLIST="$2"; shift 2 ;;
    -b) _BDII_BASE="$2"; shift 2 ;;
+   -j) _BDII_IMOBJECT="$2"; shift 2 ;;
    -d) _DEBUG=true; shift 1 ;;
    -h | --help) usage ;;
    *) do_error "Unnknown option: $1"
